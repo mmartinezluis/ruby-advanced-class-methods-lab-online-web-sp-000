@@ -59,7 +59,7 @@ class Song
 #    master_indexes = getting_master_indexes.collect {|element| element[1].to_i}
 
 #    sorted_objects = master_indexes.collect {|master_index| @@all[master_index]}
-
+binding.pry
      sorted_objects = @@all.sort_by {|object| object.name}.sort
 
   end
