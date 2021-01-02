@@ -48,19 +48,19 @@ class Song
   end
 
   def self.alphabetical
-    names_list = @@all.collect {|object| object.name}
+#    names_list = @@all.collect {|object| object.name}
 
-    marked_sorted_list = names_list.map.with_index do |name, index|
-      "#{name}.#{index}"
-    end.sort
+#    marked_sorted_list = names_list.map.with_index do |name, index|
+#      "#{name}.#{index}"
+#    end.sort
 
-    getting_master_indexes = marked_sorted_list.collect {|element| element.split(".")}
+#    getting_master_indexes = marked_sorted_list.collect {|element| element.split(".")}
 
-    master_indexes = getting_master_indexes.collect {|element| element[1].to_i}
+#    master_indexes = getting_master_indexes.collect {|element| element[1].to_i}
 
-    sorted_objects = master_indexes.collect {|master_index| @@all[master_index]}
+#    sorted_objects = master_indexes.collect {|master_index| @@all[master_index]}
 
-    sorted_objects = @@all.sort_by {|object| object.name}.sort
+     sorted_objects = @@all.sort_by {|object| object.name}.sort
 
   end
 
