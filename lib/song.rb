@@ -60,8 +60,8 @@ class Song
 
     sorted_objects = master_indexes.collect {|master_index| @@all[master_index]}
 
-  #  sorted_list = @@all.collect {|object| object.name}.sort
-  #  sorted_objects= sorted_list.collect {|name| @@all[@@all.index(name)]}
+    sorted_objects = @@all.sort_by {|object| object.name}.sort
+
   end
 
   def self.new_from_filename(filename)
